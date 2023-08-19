@@ -17,12 +17,18 @@ void call_recursive(int n){
 
 }
 
+void make_overflow(){
+    make_overflow();
+}
+
 int main(int argc,char** argv){
     
     //stack address section
     printf("In stack: address argc is at\t  %p.\n",&argc);
     printf("In stack: address argv is at\t  %p.\n",&argv);
     call_recursive(0);
+    //make stack to overflow
+    // make_overflow();
 
     //heap address section
     int *ptr1,*ptr2, *ptr3 ;
