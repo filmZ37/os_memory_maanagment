@@ -5,7 +5,7 @@ void *malloc(size_t size);
 void free(void *ptr);
 
 int var1 = 6;
-float var2 = 2.2;
+float var2 ;
 char var3 = 'A';
 
 void call_recursive(int n){
