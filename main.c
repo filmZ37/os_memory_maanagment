@@ -4,6 +4,10 @@
 void *malloc(size_t size);
 void free(void *ptr);
 
+int var1 = 6;
+float var2 = 2.2;
+char var3 = 'A';
+
 void call_recursive(int n){
     if( n < 3){
         int data = n;
@@ -32,6 +36,11 @@ int main(int argc,char** argv){
     free(ptr1);
     free(ptr2);
     free(ptr3);
+
+    //global variable address section
+    printf("In data: address of var1 is at %p.\n",&var1);
+    printf("In data: address of var2 is at %p.\n",&var2);
+    printf("In data: address of var3 is at %p.\n",&var3);
 
     return 0;
 }
